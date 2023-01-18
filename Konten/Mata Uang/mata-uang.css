@@ -11,3 +11,17 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.container {
+    background-color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    width: 490px;
+}
+
+h1{
+    color: #364547;
+    margin-left: 72px;
+    margin-bottom: 0.5em;
+    font-family: sans-serif;
+}
