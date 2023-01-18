@@ -14,14 +14,26 @@
     <h1>Konversi Mata Uang</h1>
     <div class="box">
         <div class="left-box">
-            <input type="number" name="" id="input">
+            <select name="currency" class="currency">
+                <option value="Rupiah">Rupiah</option>
+                <option value="dollar">Dollar</option>
+                <option value="Euro">Euro</option>
+                <option value="Poundsterling">Poundsterling</option>
+          
+            <input type="number" name="" id="input" placeholder="Rp.">
         </div>
         <div class="right-box">
-            <select name="currency" class="currency"></select>
-            <input type="number" name="" id="result" disabled>
+            <select name="currency" class="currency">
+                <option value="Rupiah"></option>
+                <option value="dollar">Dollar</option>
+                <option value="Euro">Euro</option>
+                <option value="Poundsterling">Poundsterling</option>
+            </select>
+            
+            <input type="number" name="" id="result" disabled placeholder="Hasil">
         </div>
 
-        <button class="btn" id="btn">KONVERSI</button>
+        
     </div>
 </div>
 </body>
