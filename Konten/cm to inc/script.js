@@ -9,7 +9,11 @@ $("#reverse").click(function(event) {
     $(".in_content").html(cm_contHTML);
 
     if (count == 0) {
-        $("#convert").attr({'onClick' : 'incm'});
+        $("#convert").attr({'onClick' : 'incm()'});
+        count = 1;
+    } else {
+        $("#convert").attr({'onClick' : 'cmin()'});
+        count = 0;
     }
 
 });
