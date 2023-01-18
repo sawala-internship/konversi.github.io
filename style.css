@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    font-family:sans-serif;
+    background-position: center;
+}
+
+.judul {
+    margin: auto 25px;
+    padding-top: 30px;
+    font-family: sans-serif;
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    color: #4D7098;
+    border: 5px solid rgba(26, 255, 0, 0.25);
+    margin-bottom: 40px;
+    border: #1AFF00;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+.menu1 {
+    background-color: #19BAFF;
+    color: white;
+    height: 60px;
+    width: 178px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.menu1:hover {
+    opacity: 80%;
+}
+.menu2 {
+    background-color: #00DA57;
+    color: white;
+    height: 60px;
+    width: 178px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.menu2:hover {
+    opacity: 80%;
+}
+.menu3 {
+    background-color: #F9B755;
+    color: white;
+    height: 60px;
+    width: 178px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 259px;
+}
+
+.menu3:hover {
+    opacity: 80%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+    .judul {
+        font-size: 36px;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    main {
+        background-image: url(assets/img/bg-dingin.png);
+    }
+    .judul {
+        font-size: 23px;
+    }
+
+    
+}
+
