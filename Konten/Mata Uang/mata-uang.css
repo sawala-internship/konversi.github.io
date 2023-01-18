@@ -49,3 +49,19 @@ select{
     border-radius: 10px;
     border: none;
 }
+
+input{
+    width: 95%;
+    height: 40px;
+    font-size: 1em;
+    margin: 0.2em 0;
+    border-radius: 10px;
+    border: none;
+    background: #cccccc;
+    outline: none;
+    padding: 0 1em;
+}
+
+.btn{
+    width: 96%;
+}
