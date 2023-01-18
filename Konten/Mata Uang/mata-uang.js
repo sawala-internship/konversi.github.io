@@ -7,6 +7,7 @@ usd.addEventListener("input", function (ev){
     const value = ev.currentTarget.value;
     const valueIDR = value * factor;
     idr.value = valueIDR;
+    
 });
 
 idr.addEventListener("input", function (ev){
