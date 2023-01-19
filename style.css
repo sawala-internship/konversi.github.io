@@ -1,107 +1,197 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-main {
-    font-family:sans-serif;
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-.container-satu {
-    height: 1080px;
+/* Page Satu Start*/
+header.container-satu {
     background-image: url(assets/img/sunset.png);
+    height: 970px;
+    width: 100%;
+
 }
+
+.navbar {
+    display: flex;
+    padding: 20px;
+    background-color:rgba(33, 28, 51, 0.5);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    /* margin-bottom: 50px; */
+}
+
+/* hamburger menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10px;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -5px;
+    top: -3px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #ffe1cc;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+
+/* hamburger menu animation */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+    
+}
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+    
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0px);
+    background-color: white;
+
+    
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+
+img {
+    height: 70px;
+    width: 70px;
+    margin-left: 40px;
+}
+
+nav ul {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 30%;
+    list-style: none;
+    font-size: 26px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #001A24;
+    font-family: kanit, sans-serif;
+    /* font-style: bold; */
+    /* align-items: center; */
+    transition: .2;
+}
+
+nav ul li a:hover{
+    color: #112730;
+} 
+
 
 .judul {
-    margin: auto 25px;
-    padding-top: 30px;
-    font-family: sans-serif;
-    font-size: 50px;
-    align-items: center;
-    text-align: center;
-    color: #4D7098;
-    border: 5px solid rgba(26, 255, 0, 0.25);
-    margin-bottom: 40px;
-    border: #1AFF00;
-}
-
-.menu {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 27px;
-}
-
-.menu1 {
-    background-color: #19BAFF;
-    color: white;
-    height: 60px;
-    width: 178px;
     text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: kanit, sans-serif;
+    margin:  150px 380px;
+    color: #001A24;
+    text-shadow: 0px -56px 80px rgba(0, 0, 0, 0.14), 0px -23.3955px 33.4221px rgba(0, 0, 0, 0.10064), 0px -12.5083px 17.869px rgba(0, 0, 0, 0.083455), 0px -7.01207px 10.0172px rgba(0, 0, 0, 0.07), 0px -3.72406px 5.32008px rgba(0, 0, 0, 0.056545), 0px -1.54966px 2.21381px rgba(0, 0, 0, 0.0393604);
+}
+/* Page Satu End */
+
+section.container-dua {
+    background-color: #211C33;
+    height: 970px;
+    box-shadow: 0px -95px 169px #211C33, 0px -47.5464px 84.5825px rgba(33, 28, 51, 0.760333), 0px -28.6397px 50.9486px rgba(33, 28, 51, 0.651589), 0px -18.3538px 32.6505px rgba(33, 28, 51, 0.570895), 0px -11.8955px 21.1614px rgba(33, 28, 51, 0.5), 0px -7.48807px 13.3209px rgba(33, 28, 51, 0.429105), 0px -4.30236px 7.65367px rgba(33, 28, 51, 0.348411), 0px -1.89358px 3.36858px rgba(33, 28, 51, 0.239667);
+}
+
+/* Page Dua Start */
+section.container-tiga {
+    background-color: #211C33;
+    height: 1080px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    transition: .5s;
 }
 
-.menu1:hover {
-    opacity: 80%;
-}
-.menu2 {
-    background-color: #00DA57;
-    color: white;
-    height: 60px;
-    width: 178px;
-    text-align: center;
+.page-third {
+    background-image: url(assets/img/uang.png);
+    opacity: 3%;
+    width: 1541px;
+    height: 1027px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    transition: .5s;
+    z-index: 2;
 }
+/* Page Dua End */
 
-.menu2:hover {
-    opacity: 80%;
-}
-.menu3 {
-    background-color: #F9B755;
-    color: white;
-    height: 60px;
-    width: 178px;
-    text-align: center;
+
+/* Page Tiga Start */
+section.container-empat {
+    background-color: #211C33;
+    height: 1100px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    margin-bottom: 1080px;
-    transition: .5s;
 }
 
-.menu3:hover {
-    opacity: 80%;
+.page-empat {
+    background-image: url(assets/img/panjang.png);
+    opacity: 5%;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    z-index: 2;
 }
+/* Page Tiga End */
 
-a{
-    text-decoration: none;
-}
 
-/* responsive */
+/* Responsive Mobile */
 @media screen and (max-width: 576px) {
-    .judul {
-        font-size: 36px;
-    }
-    
-}
-@media screen and (max-width: 400px) {
-    main {
-        background-image: url(assets/img/bg-dingin.png);
-    }
-    .judul {
-        font-size: 23px;
+    .menu-toggle {
+        display: flex;
     }
 
-    
+    nav ul {
+        display: none;
+    }
+    img {
+    height: 40px;
+    width: 40px;
+    /* margin-left: px; */
+    }
 }
+
 
