@@ -21,41 +21,43 @@ function myResult () {
 
     // now compare thr input and resultType value and add formula
 
-    if(inputTypeValue === "meter" && resultTypeValue === "kilometer") {
+    if(inputTypeValue === "Meter" && resultTypeValue ==="Kilometer") {
         // meter to km
-        result.value = Number(input.value) *0,001;
+        result.value = Number(input.value) * 0.001;
 
-    }else if(inputTypeValue === "meter" && resultTypeValue === "centimeter") {
+    }else if(inputTypeValue === "Meter" && resultTypeValue ==="Centimeter") {
         // meter to cm
-        result.value = Number(input.value) *100;
-    }else if(inputTypeValue === "meter" && resultTypeValue === "meter") {
+        result.value = Number(input.value) * 100;
+    }else if(inputTypeValue === "Meter" && resultTypeValue ==="Meter") {
         // meter to meter
+
         result.value = input.value;
+
     }
 
 
 
-    if(inputTypeValue === "kilometer" && resultTypeValue === "meter") {
+    if(inputTypeValue === "Kilometer" && resultTypeValue === "Meter") {
         // km to m
         result.value = Number(input.value) * 1000;
-    }else if(inputTypeValue === "kilometer" && resultTypeValue === "centimeter") {
+    }else if(inputTypeValue === "Kilometer" && resultTypeValue === "Centimeter") {
         // km to cm
         result.value = Number(input.value) * 100000;
-    }else if (inputTypeValue === "kilometer" && resultTypeValue === "kilometer") {
+    }else if (inputTypeValue === "Kilometer" && resultTypeValue === "kilometer") {
         // km to km
         result.value = input.value;
     }
 
 
 
-    if(inputTypeValue === "centimeter" && resultTypeValue === "kilometer") {
+    if(inputTypeValue === "Centimeter" && resultTypeValue === "Kilometer") {
         // cm to km
         result.value = Number(input.value) * 0.00001;
 
-    } else if (inputTypeValue === "centimeter" && resultTypeValue === "meter") {
+    } else if (inputTypeValue === "Centimeter" && resultTypeValue === "Meter") {
         //cm to m
-        result.value = number(input.value) * 0.01;
-    }else if(inputTypeValue === "centimeter" && resultTypeValue === "centimeter") {
+        result.value = Number(input.value) * 0.01;
+    }else if(inputTypeValue === "Centimeter" && resultTypeValue === "Centimeter") {
         //cm to cm
         result.value = input.value;
     }
