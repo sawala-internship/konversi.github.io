@@ -106,7 +106,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #001A24;
+    color: rgb(99, 99, 99);
     font-family: kanit, sans-serif;
     /* font-style: bold; */
     /* align-items: center; */
