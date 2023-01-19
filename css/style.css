@@ -11,7 +11,7 @@ html {
 
 /* Page Satu Start*/
 header.container-satu {
-    background-image: url(assets/img/sunset.png);
+    background-image: url(../assets/img/sunset.png);
     height: 970px;
     width: 100%;
 
@@ -157,6 +157,10 @@ section.container-dua {
     justify-content: center;
     margin-bottom: 100px;
     align-items: center;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin: 70px;
+    position: relative;
 }
 
 .label-suhu {
@@ -166,12 +170,13 @@ section.container-dua {
 }
 
 .input-suhu {
+    display: flex;
+    justify-content: center;
     border-radius: 10px;
-    width: 525px;
+    width: 100%;
     height: 94.68px;
     border: 5px solid #C6C6C6;
     overflow: hidden;
-    display: flex;
     flex: end;
 }
 
@@ -183,7 +188,7 @@ section.container-dua {
     border: 0px;
     outline: none;
     margin-left: 20px;
-    width: 430px;
+    width: 90%;
     height: 88px;
     letter-spacing: 5px;
     color: #C6C6C6;
@@ -197,6 +202,7 @@ span.logo-suhu {
     font-size: 32px;
     font-family: kanit, sans-serif;
     color:#8F8F8F;
+    margin-right: 20px;
 }
 
 /* Page Dua Start */
@@ -210,7 +216,7 @@ section.container-tiga {
 }
 
 .page-third {
-    background-image: url(assets/img/uang.png);
+    background-image: url(../assets/img/uang.png);
     opacity: 3%;
     width: 1541px;
     height: 1027px;
@@ -239,7 +245,7 @@ section.container-empat {
 }
 
 .page-empat {
-    background-image: url(assets/img/panjang.png);
+    background-image: url(../assets/img/panjang.png);
     opacity: 5%;
     width: 100%;
     height: 1050px;
