@@ -5,7 +5,11 @@
 
 main {
     font-family:sans-serif;
-    background-position: center;
+}
+
+.container-satu {
+    height: 1080px;
+    background-image: url(assets/img/sunset.png);
 }
 
 .judul {
@@ -55,6 +59,7 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    transition: .5s;
 }
 
 .menu2:hover {
@@ -70,7 +75,8 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    margin-bottom: 259px;
+    margin-bottom: 1080px;
+    transition: .5s;
 }
 
 .menu3:hover {
