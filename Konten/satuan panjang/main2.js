@@ -23,11 +23,11 @@ function myResult () {
 
     if(inputTypeValue === "meter" && resultTypeValue === "kilometer") {
         // meter to km
-        result.value = Number(input.value) * 0,001;
+        result.value = Number(input.value) *0,001;
 
     }else if(inputTypeValue === "meter" && resultTypeValue === "centimeter") {
         // meter to cm
-        result.value = Number(input.value) * 100;
+        result.value = Number(input.value) *100;
     }else if(inputTypeValue === "meter" && resultTypeValue === "meter") {
         // meter to meter
         result.value = input.value;
@@ -62,5 +62,3 @@ function myResult () {
 
 
 }
-
-console.log(myResult);
