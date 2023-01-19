@@ -1,4 +1,17 @@
-const select = document.querySelectorAll('.currency');
-const btn = document.getElementById('btn');
-const input = document.getElementById('input');
-const result = document.getElementById('result');
+const factor = 14000;
+
+const usd = document.getElementById("usd");
+const idr = document.getElementById("idr");
+
+usd.addEventListener("input", function (ev){
+    const value = ev.currentTarget.value;
+    const valueIDR = value * factor;
+    idr.value = valueIDR;
+    
+});
+
+idr.addEventListener("input", function (ev){
+    const value = ev.currentTarget.value;
+    const valueUSD = value / factor;
+    idr.value = valueUSD;
+});

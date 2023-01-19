@@ -1,2 +1,2 @@
 # web-konversi-js
-Konversi mata uang dan konversi suhu dengan menggunakan javascript
+Konversi mata uang, konversi suhu dan satuan panjang menggunakan javascript
