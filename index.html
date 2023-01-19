@@ -19,7 +19,7 @@
       <nav>
         <div class="navbar">
           <div class="logo">
-            <img src="assets/img/logo 1.png" alt="" />
+            <img src="assets/img/logo-sawala.png" alt="logo-sawala" />
           </div>
           <ul>
             <li><a href="#suhu" class="item">Suhu</a></li>
@@ -35,26 +35,63 @@
           </div>
         </div>
         <span class="judul">
-          <h1>Konversi Suhu, Konversi Uang Dan Konversi Panjang</h1>
+          <h1 class="h1-page-satu">
+            Konversi Suhu, Konversi Uang Dan Konversi Panjang
+          </h1>
         </span>
       </nav>
     </header>
     <!-- Page First End -->
 
     <!-- Page Second Start -->
-    <section id="suhu" class="container-dua"></section>
+    <section id="suhu" class="container-dua">
+      <div class="page-suhu">
+        <h1 class="h1-page-suhu">Konversi Suhu</h1>
+        <div class="container-input">
+          <label class="label-suhu" for="celcius">Celcius</label>
+          <div class="input-suhu inputs">
+            <input type="text" class="input" id="celcius" name="celcius" />
+            <span class="logo-suhu">°C</span>
+          </div>
+          <label class="label-suhu" for="fahrenheit">Fahrenheit</label>
+          <div class="input-suhu inputs">
+            <input
+              type="text" class="input" id="fahrenheit" name="fahrenheit" />
+            <span class="logo-suhu">°F</span>
+          </div>
+          <label class="label-suhu" for="kelvin">Kelvin</label>
+          <div class="input-suhu inputs">
+            <input type="text" class="input" id="kelvin" name="kelvin" />
+            <span class="logo-suhu">°R</span>
+          </div>
+          <label class="label-suhu" for="celcius">Reamur</label>
+          <div class="input-suhu inputs">
+            <input type="text" class="input" id="reamur" name="reamur" />
+            <span class="logo-suhu">K</span>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Page Second End -->
 
     <!-- Page Third Start -->
     <section id="uang" class="container-tiga">
       <div class="page-third"></div>
+      <div class="page-suhu">
+        <h1 class="h1-page-uang">Konversi Uang</h1>
+      </div>
     </section>
     <!-- Page third End -->
 
     <!-- Page fourth Start -->
     <section id="panjang" class="container-empat">
       <div class="page-empat"></div>
+      <div class="page-suhu">
+        <h1 class="h1-page-panjang">Konversi Panjang</h1>
+      </div>
     </section>
     <!-- Page fourth End -->
+
+    <script src="script.js"></script>
   </body>
 </html>

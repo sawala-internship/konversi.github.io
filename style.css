@@ -20,12 +20,14 @@ header.container-satu {
 .navbar {
     display: flex;
     padding: 20px;
-    background-color:rgba(33, 28, 51, 0.5);
+    background-color:rgba(33, 28, 51, 0.8);
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
+    box-shadow: 0px -95px 169px #211C33, 0px -47.5464px 84.5825px rgba(33, 28, 51, 0.760333), 0px -28.6397px 50.9486px rgba(33, 28, 51, 0.651589), 0px -18.3538px 32.6505px rgba(33, 28, 51, 0.570895), 0px -11.8955px 21.1614px rgba(33, 28, 51, 0.5), 0px -7.48807px 13.3209px rgba(33, 28, 51, 0.429105), 0px -4.30236px 7.65367px rgba(33, 28, 51, 0.348411), 0px -1.89358px 3.36858px rgba(33, 28, 51, 0.239667);
     /* margin-bottom: 50px; */
+    z-index: 10;
 }
 
 /* hamburger menu */
@@ -91,7 +93,7 @@ header.container-satu {
 img {
     height: 70px;
     width: 70px;
-    margin-left: 40px;
+    margin-left: 35px;
 }
 
 nav ul {
@@ -102,19 +104,18 @@ nav ul {
     list-style: none;
     font-size: 26px;
     align-items: center;
+    margin-right: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(99, 99, 99);
+    color: #c6c6c6;
     font-family: kanit, sans-serif;
-    /* font-style: bold; */
-    /* align-items: center; */
-    transition: .2;
+    transition: ease-in-out 0.3s;
 }
 
 nav ul li a:hover{
-    color: #112730;
+    color: #fffefe;
 } 
 
 
@@ -125,25 +126,85 @@ nav ul li a:hover{
     text-align: center;
 }
 
-h1 {
+.h1-page-satu {
     font-size: 64px;
     font-family: kanit, sans-serif;
-    margin:  150px 380px;
+    margin:  220px 380px;
     color: #001A24;
     text-shadow: 0px -56px 80px rgba(0, 0, 0, 0.14), 0px -23.3955px 33.4221px rgba(0, 0, 0, 0.10064), 0px -12.5083px 17.869px rgba(0, 0, 0, 0.083455), 0px -7.01207px 10.0172px rgba(0, 0, 0, 0.07), 0px -3.72406px 5.32008px rgba(0, 0, 0, 0.056545), 0px -1.54966px 2.21381px rgba(0, 0, 0, 0.0393604);
 }
 /* Page Satu End */
 
 section.container-dua {
+    padding-top: 168px;
     background-color: #211C33;
-    height: 970px;
+    height: 1300px;
     box-shadow: 0px -95px 169px #211C33, 0px -47.5464px 84.5825px rgba(33, 28, 51, 0.760333), 0px -28.6397px 50.9486px rgba(33, 28, 51, 0.651589), 0px -18.3538px 32.6505px rgba(33, 28, 51, 0.570895), 0px -11.8955px 21.1614px rgba(33, 28, 51, 0.5), 0px -7.48807px 13.3209px rgba(33, 28, 51, 0.429105), 0px -4.30236px 7.65367px rgba(33, 28, 51, 0.348411), 0px -1.89358px 3.36858px rgba(33, 28, 51, 0.239667);
+}
+
+.h1-page-suhu {
+    padding-top: 50px;
+    font-family: kanit, sans-serif;
+    color: #19BAFF;
+    text-align: center;
+    font-size: 64px;
+}
+
+.container-input {
+    gap: 20px;
+    display: grid;
+    padding-top: 140px;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.label-suhu {
+    font-size: 32px;
+    color: #C6C6C6;
+    font-family: kanit, sans-serif;
+}
+
+.input-suhu {
+    border-radius: 10px;
+    width: 525px;
+    height: 94.68px;
+    border: 5px solid #C6C6C6;
+    overflow: hidden;
+    display: flex;
+    flex: end;
+}
+
+.input-suhu input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    margin-left: 20px;
+    width: 430px;
+    height: 88px;
+    letter-spacing: 5px;
+    color: #C6C6C6;
+    font-size: 50px;
+    font-family: kanit, sans-serif;
+}
+
+span.logo-suhu {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-family: kanit, sans-serif;
+    color:#8F8F8F;
 }
 
 /* Page Dua Start */
 section.container-tiga {
+    width: 100%;
+    padding-top: 200px;
     background-color: #211C33;
-    height: 1080px;
+    height: 1300px;
     display: flex;
     justify-content: center;
 }
@@ -154,16 +215,26 @@ section.container-tiga {
     width: 1541px;
     height: 1027px;
     display: flex;
-    z-index: 2;
+    position: absolute;
+    z-index: 1;
+}
+.h1-page-uang {
+    color: #00DA57;
+    font-size: 64px;
+    text-align: center;
+    font-family: kanit, sans-serif;
 }
 /* Page Dua End */
 
 
 /* Page Tiga Start */
 section.container-empat {
+    width: 100%;
+    padding-top: 150px;
     background-color: #211C33;
-    height: 1100px;
+    height: 1300px;
     display: flex;
+    position: relative;
     justify-content: center;
 }
 
@@ -171,10 +242,19 @@ section.container-empat {
     background-image: url(assets/img/panjang.png);
     opacity: 5%;
     width: 100%;
-    height: 1100px;
+    height: 1050px;
     display: flex;
-    z-index: 2;
+    position: absolute;
 }
+
+.h1-page-panjang {
+    padding-top: 50px;
+    color: #F9B755;
+    font-size: 64px;
+    text-align: center;
+    font-family: kanit, sans-serif;
+}
+
 /* Page Tiga End */
 
 
@@ -190,8 +270,15 @@ section.container-empat {
     img {
     height: 40px;
     width: 40px;
-    /* margin-left: px; */
     }
+
+    .h1-page-suhu {
+        font-size: 24px;
+    }
+    .h1-page-uang {
+        font-size: 24px;
+    }
+
 }
 
 
