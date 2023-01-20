@@ -278,6 +278,58 @@ section.container-empat {
     z-index: 99;
 }
 
+#inputType {
+    width: 176px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background: transparent;
+    color: #8F8F8F;
+    border: 3px solid white;
+}
+
+#resultType {
+    margin-top: 125px;
+    margin-left: 25px;
+    width: 177px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background: transparent;
+    border: 3px solid white;
+    color: #8F8F8F;
+}
+
+#input{
+    margin-right: 25px;
+    height: 100px;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#result{
+    height: 100px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+
+    
+}
+
+.option{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1000px;
+}
+
 /* Page Panjang End */
 
 /* Responsive Tablet */
