@@ -1,33 +1,37 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
     overflow-x: hidden;
 }
 
 /* Page Satu Start*/
 header.container-satu {
     background-image: url(../assets/img/sunset.png);
-    height: 970px;
     width: 100%;
-
+    height: 1080px;
+    /* -z-index: -10; */
 }
 
-.navbar {
+nav.navbar {
     display: flex;
-    padding: 20px;
+    padding: 20px 0;
     background-color:rgba(33, 28, 51, 0.8);
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
+    position: fixed;
     box-shadow: 0px -95px 169px #211C33, 0px -47.5464px 84.5825px rgba(33, 28, 51, 0.760333), 0px -28.6397px 50.9486px rgba(33, 28, 51, 0.651589), 0px -18.3538px 32.6505px rgba(33, 28, 51, 0.570895), 0px -11.8955px 21.1614px rgba(33, 28, 51, 0.5), 0px -7.48807px 13.3209px rgba(33, 28, 51, 0.429105), 0px -4.30236px 7.65367px rgba(33, 28, 51, 0.348411), 0px -1.89358px 3.36858px rgba(33, 28, 51, 0.239667);
     /* margin-bottom: 50px; */
-    z-index: 10;
+    z-index: 99;
 }
 
 /* hamburger menu */
@@ -38,7 +42,8 @@ header.container-satu {
     height: 20px;
     justify-content: space-between;
     position: relative;
-    z-index: 10px;
+    z-index: 10;
+    width: 25%;
 }
 
 .menu-toggle input {
@@ -56,7 +61,7 @@ header.container-satu {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #ffe1cc;
+    background-color: #c6c6cc;
     border-radius: 3px;
     transition: all 0.5s;
 }
@@ -97,6 +102,7 @@ img {
 }
 
 nav ul {
+    /* position: fixed; */
     display: flex;
     align-content: center;
     justify-content: space-around;
@@ -127,20 +133,25 @@ nav ul li a:hover{
 }
 
 .h1-page-satu {
-    font-size: 64px;
+    font-size: 40px;
+    margin:  200px 20px;
     font-family: kanit, sans-serif;
-    margin:  220px 380px;
     color: #001A24;
     text-shadow: 0px -56px 80px rgba(0, 0, 0, 0.14), 0px -23.3955px 33.4221px rgba(0, 0, 0, 0.10064), 0px -12.5083px 17.869px rgba(0, 0, 0, 0.083455), 0px -7.01207px 10.0172px rgba(0, 0, 0, 0.07), 0px -3.72406px 5.32008px rgba(0, 0, 0, 0.056545), 0px -1.54966px 2.21381px rgba(0, 0, 0, 0.0393604);
 }
 /* Page Satu End */
 
 section.container-dua {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     padding-top: 168px;
     background-color: #211C33;
     height: 1300px;
-    box-shadow: 0px -95px 169px #211C33, 0px -47.5464px 84.5825px rgba(33, 28, 51, 0.760333), 0px -28.6397px 50.9486px rgba(33, 28, 51, 0.651589), 0px -18.3538px 32.6505px rgba(33, 28, 51, 0.570895), 0px -11.8955px 21.1614px rgba(33, 28, 51, 0.5), 0px -7.48807px 13.3209px rgba(33, 28, 51, 0.429105), 0px -4.30236px 7.65367px rgba(33, 28, 51, 0.348411), 0px -1.89358px 3.36858px rgba(33, 28, 51, 0.239667);
+    /* box-shadow: 0px -95px 169px #211C33, 0px -47.5464px 84.5825px rgba(33, 28, 51, 0.760333), 0px -28.6397px 50.9486px rgba(33, 28, 51, 0.651589), 0px -18.3538px 32.6505px rgba(33, 28, 51, 0.570895), 0px -11.8955px 21.1614px rgba(33, 28, 51, 0.5), 0px -7.48807px 13.3209px rgba(33, 28, 51, 0.429105), 0px -4.30236px 7.65367px rgba(33, 28, 51, 0.348411), 0px -1.89358px 3.36858px rgba(33, 28, 51, 0.239667); */
 }
+
+/* Suhu Start */
 
 .h1-page-suhu {
     padding-top: 50px;
@@ -205,7 +216,9 @@ span.logo-suhu {
     margin-right: 20px;
 }
 
-/* Page Dua Start */
+/* Suhu End */
+
+/* Page Uang Start */
 section.container-tiga {
     width: 100%;
     padding-top: 200px;
@@ -230,10 +243,10 @@ section.container-tiga {
     text-align: center;
     font-family: kanit, sans-serif;
 }
-/* Page Dua End */
+/* Page Uang End */
 
 
-/* Page Tiga Start */
+/* Page Panjang Start */
 section.container-empat {
     width: 100%;
     padding-top: 150px;
@@ -261,21 +274,43 @@ section.container-empat {
     font-family: kanit, sans-serif;
 }
 
-/* Page Tiga End */
+.page-panjang {
+    z-index: 99;
+}
+
+/* Page Panjang End */
+
+/* Responsive Tablet */
 
 
 /* Responsive Mobile */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 1200px) {
+    .h1-page-satu {
+        font-size: 64px;
+        margin:  220px 380px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header.container-satu {
+        background-image: url(../assets/img/sunset-mobile.png);
+    }
+
+    .menu-toggle {
+        width: 15%;
+    }
     .menu-toggle {
         display: flex;
     }
 
-    nav ul {
-        display: none;
-    }
     img {
     height: 40px;
     width: 40px;
+    }
+    .h1-page-satu {
+        padding-top: 150px;
+        font-size: 24px;
+        margin:  150px 30px;
     }
 
     .h1-page-suhu {
@@ -285,6 +320,43 @@ section.container-empat {
         font-size: 24px;
     }
 
+    .h1-page-panjang {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .menu-toggle {
+        width: 25%;
+    }
+
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 84px;
+        height: 40vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #29233c;
+        z-index: -100;
+        transform: translateY(-100%);
+        transition: all 1s;
+        opacity: 0;
+        margin-right: 0;
+        border-radius: 5px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul.slide {
+        transform: translatey(0);
+        opacity: 1;
+    }
 }
 
 

@@ -16,30 +16,28 @@
   <body>
     <!-- Page First Start -->
     <header class="container-satu">
-      <nav>
-        <div class="navbar">
-          <div class="logo">
-            <img src="assets/img/logo-sawala.png" alt="logo-sawala" />
-          </div>
-          <ul>
-            <li><a href="#suhu" class="item">Suhu</a></li>
-            <li><a href="#uang" class="item">Uang</a></li>
-            <li><a href="#panjang" class="item">Panjang</a></li>
-          </ul>
-
-          <div class="menu-toggle">
-            <input type="checkbox" class="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/img/logo-sawala.png" alt="logo-sawala" />
         </div>
-        <span class="judul">
-          <h1 class="h1-page-satu">
-            Konversi Suhu, Konversi Uang Dan Konversi Panjang
-          </h1>
-        </span>
+        <ul>
+          <li><a href="#suhu" class="item">Suhu</a></li>
+          <li><a href="#uang" class="item">Uang</a></li>
+          <li><a href="#panjang" class="item">Panjang</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+          <input type="checkbox" class="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
+      <div class="judul">
+        <h1 class="h1-page-satu">
+          Konversi Suhu, Konversi Uang Dan Konversi Panjang
+        </h1>
+      </div>
     </header>
     <!-- Page First End -->
 
@@ -56,7 +54,11 @@
           <label class="label-suhu" for="fahrenheit">Fahrenheit</label>
           <div class="input-suhu inputs">
             <input
-              type="text" class="input" id="fahrenheit" name="fahrenheit" />
+              type="text"
+              class="input"
+              id="fahrenheit"
+              name="fahrenheit"
+            />
             <span class="logo-suhu">°F</span>
           </div>
           <label class="label-suhu" for="kelvin">Kelvin</label>
@@ -86,8 +88,25 @@
     <!-- Page fourth Start -->
     <section id="panjang" class="container-empat">
       <div class="page-empat"></div>
-      <div class="page-suhu">
+      <div class="page-panjang">
         <h1 class="h1-page-panjang">Konversi Panjang</h1>
+        <select id="inputType" class="">
+          <option value="Meter">Meter</option>
+          <option value="Kilometer">Kilometer</option>
+          <option value="Centimeter">Centimeter</option>
+        </select>
+
+        <select id="resultType">
+          <option value="Meter">Meter</option>
+          <option value="Kilometer">Kilometer</option>
+          <option value="Centimeter">Centimeter</option>
+        </select>
+
+        <div class="converter-body">
+          <input type="text" placeholder="Input" id="input" />
+          <span>=</span>
+          <input type="text" placeholder="Result" id="result" />
+        </div>
       </div>
     </section>
     <!-- Page fourth End -->
