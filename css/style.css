@@ -222,7 +222,7 @@ section.container-tiga {
     width: 100%;
     padding-top: 200px;
     background-color: #211C33;
-    height: 1300px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     z-index: -1;
@@ -267,7 +267,7 @@ section.container-empat {
     width: 100%;
     padding-top: 150px;
     background-color: #211C33;
-    height: 800px;
+    height: 1080px;
     display: flex;
     justify-content: center;
 }
@@ -359,13 +359,6 @@ input.input-panjang {
 option {
     color: #001A24;
 }
-
-.option{
-    font-family: arial;
-    font-weight: bold;
-    font-size: 1000px;
-}
-
 /* Page Panjang End */
 
 /* Responsive Tablet */
@@ -376,6 +369,12 @@ option {
     .h1-page-satu {
         font-size: 64px;
         margin:  300px 220px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    nav ul {
+        width: 40%;
     }
 }
 
@@ -439,11 +438,16 @@ option {
     }
 
     section.container-tiga {
-        height: 1000px;
+        height: 500px;
+    }
+
+    .page-third {
+        display: none;
+        /* z-index: ; */
     }
 
     section.container-empat {
-        height: 500px;
+        height: 600px;
     }
 
     input.input-panjang {
