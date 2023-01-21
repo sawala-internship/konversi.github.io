@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 html {
@@ -34,7 +34,6 @@ nav.navbar {
     width: 100%;
     position: fixed;
     box-shadow: 0px 2px 60px #2A213E;
-    /* margin-bottom: 50px; */
     z-index: 99;
 }
 
@@ -170,7 +169,7 @@ section.container-dua {
     justify-content: center;
     margin-bottom: 100px;
     align-items: center;
-    margin: 50px;
+    margin: 20px;
     position: relative;
 }
 
@@ -188,7 +187,7 @@ section.container-dua {
     height: 94.68px;
     border: 5px solid #C6C6C6;
     overflow: hidden;
-    flex: end;
+    margin-bottom: 30px;
 }
 
 .input-suhu input {
@@ -200,7 +199,7 @@ section.container-dua {
     outline: none;
     margin-left: 20px;
     width: 85%;
-    height: 93px;
+    height: 94px;
     letter-spacing: 5px;
     color: #C6C6C6;
     font-size: 50px;
@@ -281,7 +280,7 @@ section.container-empat {
     grid-template-areas:
     'option1 option2'
     'input1 input2';
-    gap: 5px;
+    gap: 2px;
     justify-content: center;
  }
 
