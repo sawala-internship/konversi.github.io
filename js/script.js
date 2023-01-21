@@ -38,12 +38,12 @@ for (let i = 0; i < inputs.length; i++) {
 }
 // ! Suhu End
 
-// ! Panjng Start
-var input = document.getElementById("input");
-var result = document.getElementById("result");
-var inputType = document.getElementById("inputType");
-var resultType = document.getElementById("resultType");
-var inputTypeValue, resultTypeValue;
+// ! Panjang Start
+let input = document.getElementById("input");
+let result = document.getElementById("result");
+let inputType = document.getElementById("inputType");
+let resultType = document.getElementById("resultType");
+let inputTypeValue, resultTypeValue;
 
 //now add listener
 input.addEventListener("keyup", myResult);
@@ -105,80 +105,23 @@ function myResult() {
 }
 // ! Panjng End
 
-// untuk toggle slide
+// *untuk toggle slide
 const toggle = document.querySelector(".menu-toggle input");
 const slide = document.querySelector("nav ul");
+const active = document.querySelector("input:checked");
 
 toggle.addEventListener("click", function () {
   slide.classList.toggle("slide");
 });
 
-// ! Uang Start
-function hitungUang() {
-  
+slide.addEventListener("click", function () {
+  slide.classList.remove("slide");
+  slide.classList.toggle("active");
+});
 
-  const input = document.getElementById('input');
-  const result = document.getElementById('result');
-  const inputType = document.getElementById('inputType');
-  const resultType = document.getElementById('resultType');
-  let inputTypeValueUang, resultTypeValueUang;
-
-//now add listener
-  input.addEventListener("keyup",myResultuUang);
-  inputType.addEventListener("change",myResultuUang);
-  resultType.addEventListener("change",myResultuUang);
-
-// taking initial value
-  inputTypeValueUang = inputType.value;
-  resultTypeValueUang = resultType.value;
-
-  function myResult () {
-
-
-    inputTypeValueUang = inputType.value;
-    resultTypeValueUang = resultType.value;
-
-  
-         // Dollar to Rupiah
-    if(inputTypeValueUang === "Dollar" && resultTypeValueUang ==="Rupiah") {
-        result.value = Number(input.value) * 16000;
-          // Rupiah to Dollar
-    }else if(inputTypeValueUang === "Rupiah" && resultTypeValueUang ==="Dollar") {
-        result.value = Number(input.value) * 0.0000625;
-         // Dollar to Dollar
-    }else if(inputTypeValueUang === "Dollar" && resultTypeValueUang ==="Dollar") {
-       result.value = input.value;
-
-    }
-
-
-         // Euro to Rupiah
-    if(inputTypeValueUang === "Euro" && resultTypeValueUang === "Rupiah") {
-       result.value = Number(input.value) * 17000;
-       // Rupiah to Euro
-    
-        }else if(inputTypeValueUang === "Rupiah" && resultTypeValueUang === "Euro") {
-        result.value = Number(input.value) * 0.00005882353;
-         
-        // Rupiah to Rupiah
-    
-        }else if (inputTypeValueUang === "Rupiah" && resultTypeValueUang === "Rupiah") {
-       result.value = input.value;
-    }
-
-
-        // Dollar to Euro
-    if(inputTypeValueUang === "Dollar" && resultTypeValueUang === "Euro") {
-        result.value = Number(input.value) * 0.92;
-
-          //Euro to Dollar
-        } else if (inputTypeValueUang === "Euro" && resultTypeValueUang === "Dollar") {
-        result.value = Number(input.value) * 1.08;
-
-        // Euro to Euro
-        }else if(inputTypeValue === "Euro" && resultTypeValueUang === "Euro") {
-        result.value = input.value;
-    }
+window.addEventListener("click", function (e) {
+  if (e.target != toggle && e.target != slide) {
+    slide.classList.remove("slide");
+    slide.classList.remove("active");
   }
-
-}
+});
