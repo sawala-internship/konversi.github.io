@@ -113,3 +113,72 @@ toggle.addEventListener("click", function () {
   slide.classList.toggle("slide");
 });
 
+// ! Uang Start
+function hitungUang() {
+  
+
+  const input = document.getElementById('input');
+  const result = document.getElementById('result');
+  const inputType = document.getElementById('inputType');
+  const resultType = document.getElementById('resultType');
+  let inputTypeValueUang, resultTypeValueUang;
+
+//now add listener
+  input.addEventListener("keyup",myResultuUang);
+  inputType.addEventListener("change",myResultuUang);
+  resultType.addEventListener("change",myResultuUang);
+
+// taking initial value
+  inputTypeValueUang = inputType.value;
+  resultTypeValueUang = resultType.value;
+
+  function myResult () {
+
+
+    inputTypeValueUang = inputType.value;
+    resultTypeValueUang = resultType.value;
+
+  
+         // Dollar to Rupiah
+    if(inputTypeValueUang === "Dollar" && resultTypeValueUang ==="Rupiah") {
+        result.value = Number(input.value) * 16000;
+          // Rupiah to Dollar
+    }else if(inputTypeValueUang === "Rupiah" && resultTypeValueUang ==="Dollar") {
+        result.value = Number(input.value) * 0.0000625;
+         // Dollar to Dollar
+    }else if(inputTypeValueUang === "Dollar" && resultTypeValueUang ==="Dollar") {
+       result.value = input.value;
+
+    }
+
+
+         // Euro to Rupiah
+    if(inputTypeValueUang === "Euro" && resultTypeValueUang === "Rupiah") {
+       result.value = Number(input.value) * 17000;
+       // Rupiah to Euro
+    
+        }else if(inputTypeValueUang === "Rupiah" && resultTypeValueUang === "Euro") {
+        result.value = Number(input.value) * 0.00005882353;
+         
+        // Rupiah to Rupiah
+    
+        }else if (inputTypeValueUang === "Rupiah" && resultTypeValueUang === "Rupiah") {
+       result.value = input.value;
+    }
+
+
+        // Dollar to Euro
+    if(inputTypeValueUang === "Dollar" && resultTypeValueUang === "Euro") {
+        result.value = Number(input.value) * 0.92;
+
+          //Euro to Dollar
+        } else if (inputTypeValueUang === "Euro" && resultTypeValueUang === "Dollar") {
+        result.value = Number(input.value) * 1.08;
+
+        // Euro to Euro
+        }else if(inputTypeValue === "Euro" && resultTypeValueUang === "Euro") {
+        result.value = input.value;
+    }
+  }
+
+}
