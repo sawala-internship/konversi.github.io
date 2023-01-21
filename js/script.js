@@ -38,12 +38,12 @@ for (let i = 0; i < inputs.length; i++) {
 }
 // ! Suhu End
 
-// ! Panjang Start
-let input = document.getElementById("input");
-let result = document.getElementById("result");
-let inputType = document.getElementById("inputType");
-let resultType = document.getElementById("resultType");
-let inputTypeValue, resultTypeValue;
+// ! Panjng Start
+var input = document.getElementById("input");
+var result = document.getElementById("result");
+var inputType = document.getElementById("inputType");
+var resultType = document.getElementById("resultType");
+var inputTypeValue, resultTypeValue;
 
 //now add listener
 input.addEventListener("keyup", myResult);
@@ -105,23 +105,11 @@ function myResult() {
 }
 // ! Panjng End
 
-// *untuk toggle slide
+// untuk toggle slide
 const toggle = document.querySelector(".menu-toggle input");
 const slide = document.querySelector("nav ul");
-const active = document.querySelector("input:checked");
 
 toggle.addEventListener("click", function () {
   slide.classList.toggle("slide");
 });
 
-slide.addEventListener("click", function () {
-  slide.classList.remove("slide");
-  slide.classList.toggle("active");
-});
-
-window.addEventListener("click", function (e) {
-  if (e.target != toggle && e.target != slide) {
-    slide.classList.remove("slide");
-    slide.classList.remove("active");
-  }
-});
