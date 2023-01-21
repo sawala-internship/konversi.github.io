@@ -38,6 +38,80 @@ for (let i = 0; i < inputs.length; i++) {
 }
 // ! Suhu End
 
+// ! Uang Start
+let inputUang = document.getElementById("inputUang");
+let resultUang = document.getElementById("resultUang");
+let inputTypeUang = document.getElementById("inputTypeUang");
+let resultTypeUang = document.getElementById("resultTypeUang");
+let inputTypeValueUang, resultTypeValueUang;
+
+//now add listener
+inputUang.addEventListener("keyup", myResultUang);
+inputTypeUang.addEventListener("change", myResultUang);
+resultTypeUang.addEventListener("change", myResultUang);
+
+// taking initial value
+inputTypeValueUang = inputTypeUang.value;
+resultTypeValueUang = resultTypeUang.value;
+
+function myResultUang() {
+  inputTypeValueUang = inputTypeUang.value;
+  resultTypeValueUang = resultTypeUang.value;
+
+  // Dollar to Rupiah
+  if (inputTypeValueUang === "Dollar" && resultTypeValueUang === "Rupiah") {
+    resultUang.value = Number(inputUang.value) * 16000;
+    // Rupiah to Dollar
+  } else if (
+    inputTypeValueUang === "Rupiah" &&
+    resultTypeValueUang === "Dollar"
+  ) {
+    resultUang.value = Number(inputUang.value) * 0.0000625;
+    // Dollar to Dollar
+  } else if (
+    inputTypeValueUang === "Dollar" &&
+    resultTypeValueUang === "Dollar"
+  ) {
+    resultUang.value = inputUang.value;
+  }
+
+  // Euro to Rupiah
+  if (inputTypeValueUang === "Euro" && resultTypeValueUang === "Rupiah") {
+    resultUang.value = Number(inputUang.value) * 17000;
+    // Rupiah to Euro
+  } else if (
+    inputTypeValueUang === "Rupiah" &&
+    resultTypeValueUang === "Euro"
+  ) {
+    resultUang.value = Number(inputUang.value) * 0.00005882353;
+
+    // Rupiah to Rupiah
+  } else if (
+    inputTypeValueUang === "Rupiah" &&
+    resultTypeValueUang === "Rupiah"
+  ) {
+    resultUang.value = inputUang.value;
+  }
+
+  // Dollar to Euro
+  if (inputTypeValueUang === "Dollar" && resultTypeValueUang === "Euro") {
+    resultUang.value = Number(inputUang.value) * 0.92;
+
+    //Euro to Dollar
+  } else if (
+    inputTypeValueUang === "Euro" &&
+    resultTypeValueUang === "Dollar"
+  ) {
+    resultUang.value = Number(inputUang.value) * 1.08;
+
+    // Euro to Euro
+  } else if (inputTypeValueUang === "Euro" && resultTypeValueUang === "Euro") {
+    resultUang.value = inputUang.value;
+  }
+}
+
+// ! Uang End
+
 // ! Panjang Start
 let input = document.getElementById("input");
 let result = document.getElementById("result");
