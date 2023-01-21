@@ -48,13 +48,13 @@
         <div class="container-input">
           <label class="label-suhu" for="celcius">Celcius</label>
           <div class="input-suhu inputs">
-            <input type="text" class="input" id="celcius" name="celcius" />
+            <input type="number" class="input" id="celcius" name="celcius" />
             <span class="logo-suhu">°C</span>
           </div>
           <label class="label-suhu" for="fahrenheit">Fahrenheit</label>
           <div class="input-suhu inputs">
             <input
-              type="text"
+              type="number"
               class="input"
               id="fahrenheit"
               name="fahrenheit"
@@ -63,12 +63,12 @@
           </div>
           <label class="label-suhu" for="kelvin">Kelvin</label>
           <div class="input-suhu inputs">
-            <input type="text" class="input" id="kelvin" name="kelvin" />
+            <input type="number" class="input" id="kelvin" name="kelvin" />
             <span class="logo-suhu">°R</span>
           </div>
           <label class="label-suhu" for="celcius">Reamur</label>
           <div class="input-suhu inputs">
-            <input type="text" class="input" id="reamur" name="reamur" />
+            <input type="number" class="input" id="reamur" name="reamur" />
             <span class="logo-suhu">K</span>
           </div>
         </div>
@@ -90,25 +90,43 @@
       <div class="page-empat"></div>
       <div class="page-panjang">
         <h1 class="h1-page-panjang">Konversi Panjang</h1>
-        <select id="inputType" class="">
-          <option value="Meter">Meter</option>
-          <option value="Kilometer">Kilometer</option>
-          <option value="Centimeter">Centimeter</option>
-        </select>
-
-        <select id="resultType">
-          <option value="Meter">Meter</option>
-          <option value="Kilometer">Kilometer</option>
-          <option value="Centimeter">Centimeter</option>
-        </select>
-
-        <div class="converter-body">
-          <input type="text" placeholder="Input" id="input" />
-          <span>=</span>
-          <input type="text" placeholder="Result" id="result" />
+        <div class="container-panjang">
+          <div class="inputs-panjang option1">
+            <select id="inputType" class="select-panjang">
+              <option value="">Input</option>
+              <option value="Meter">Meter</option>
+              <option value="Kilometer">Kilometer</option>
+              <option value="Centimeter">Centimeter</option>
+            </select>
+          </div>
+          <div class="inputs-panjang input1">
+            <input
+              type="text"
+              id="input"
+              class="input-panjang"
+              placeholder="Angka Input"
+            />
+          </div>
+          <div class="inputs-panjang option2">
+            <select id="resultType" class="select-panjang">
+              <option value="">Output</option>
+              <option value="Meter">Meter</option>
+              <option value="Kilometer">Kilometer</option>
+              <option value="Centimeter">Centimeter</option>
+            </select>
+          </div>
+          <div class="inputs-panjang input2">
+            <input
+              type="text"
+              id="result"
+              class="input-panjang"
+              placeholder="Angka Output"
+            />
+          </div>
         </div>
       </div>
     </section>
+
     <!-- Page fourth End -->
 
     <script src="js/script.js"></script>

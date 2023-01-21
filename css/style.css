@@ -20,16 +20,20 @@ header.container-satu {
     /* -z-index: -10; */
 }
 
+nav {
+    z-index: 99;
+}
+
 nav.navbar {
     display: flex;
     padding: 20px 0;
-    background-color:rgba(33, 28, 51, 0.8);
+    background-color:rgba(33, 28, 51, 1);
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     position: fixed;
-    box-shadow: 0px -95px 169px #211C33, 0px -47.5464px 84.5825px rgba(33, 28, 51, 0.760333), 0px -28.6397px 50.9486px rgba(33, 28, 51, 0.651589), 0px -18.3538px 32.6505px rgba(33, 28, 51, 0.570895), 0px -11.8955px 21.1614px rgba(33, 28, 51, 0.5), 0px -7.48807px 13.3209px rgba(33, 28, 51, 0.429105), 0px -4.30236px 7.65367px rgba(33, 28, 51, 0.348411), 0px -1.89358px 3.36858px rgba(33, 28, 51, 0.239667);
+    box-shadow: 0px 2px 60px #2A213E;
     /* margin-bottom: 50px; */
     z-index: 99;
 }
@@ -42,7 +46,7 @@ nav.navbar {
     height: 20px;
     justify-content: space-between;
     position: relative;
-    z-index: 10;
+    z-index: 4;
     width: 25%;
 }
 
@@ -54,7 +58,7 @@ nav.navbar {
     left: -5px;
     top: -3px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 5;
 }
 
 .menu-toggle span {
@@ -77,19 +81,19 @@ nav.navbar {
     transform-origin: 0 100%;
     
 }
-.menu-toggle input:checked ~ span:nth-child(2) {
+.menu-toggle > input:checked ~ span:nth-child(2) {
     transform: rotate(45deg) translate(-1px, -1px);
     background-color: white;
 }
 
-.menu-toggle input:checked ~ span:nth-child(4) {
+.menu-toggle > input:checked ~ span:nth-child(4) {
     transform: rotate(-45deg) translate(-1px, 0px);
     background-color: white;
 
     
 }
 
-.menu-toggle input:checked ~ span:nth-child(3) {
+.menu-toggle > input:checked ~ span:nth-child(3) {
     transform: scale(0);
     opacity: 0;
 }
@@ -145,10 +149,9 @@ section.container-dua {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 168px;
+    padding-top: 140px;
     background-color: #211C33;
-    height: 1300px;
-    /* box-shadow: 0px -95px 169px #211C33, 0px -47.5464px 84.5825px rgba(33, 28, 51, 0.760333), 0px -28.6397px 50.9486px rgba(33, 28, 51, 0.651589), 0px -18.3538px 32.6505px rgba(33, 28, 51, 0.570895), 0px -11.8955px 21.1614px rgba(33, 28, 51, 0.5), 0px -7.48807px 13.3209px rgba(33, 28, 51, 0.429105), 0px -4.30236px 7.65367px rgba(33, 28, 51, 0.348411), 0px -1.89358px 3.36858px rgba(33, 28, 51, 0.239667); */
+    height: 1080px;
 }
 
 /* Suhu Start */
@@ -162,15 +165,12 @@ section.container-dua {
 }
 
 .container-input {
-    gap: 20px;
+    /* gap: 20px; */
     display: grid;
-    padding-top: 140px;
     justify-content: center;
     margin-bottom: 100px;
     align-items: center;
-    /* margin-left: 20px;
-    margin-right: 20px; */
-    margin: 70px;
+    margin: 50px;
     position: relative;
 }
 
@@ -199,8 +199,8 @@ section.container-dua {
     border: 0px;
     outline: none;
     margin-left: 20px;
-    width: 90%;
-    height: 88px;
+    width: 85%;
+    height: 93px;
     letter-spacing: 5px;
     color: #C6C6C6;
     font-size: 50px;
@@ -232,7 +232,7 @@ section.container-tiga {
     background-image: url(../assets/img/uang.png);
     opacity: 3%;
     width: 1541px;
-    height: 1027px;
+    height: 1000px;
     display: flex;
     position: absolute;
     z-index: 1;
@@ -251,20 +251,19 @@ section.container-empat {
     width: 100%;
     padding-top: 150px;
     background-color: #211C33;
-    height: 1300px;
+    height: 800px;
     display: flex;
-    position: relative;
     justify-content: center;
 }
 
-.page-empat {
+/* .page-empat {
     background-image: url(../assets/img/panjang.png);
     opacity: 5%;
     width: 100%;
     height: 1050px;
     display: flex;
     position: absolute;
-}
+} */
 
 .h1-page-panjang {
     padding-top: 50px;
@@ -274,8 +273,75 @@ section.container-empat {
     font-family: kanit, sans-serif;
 }
 
+.container-panjang {
+    width: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'option1 option2'
+    'input1 input2';
+    gap: 5px;
+    justify-content: center;
+ }
+
+.inputs-panjang {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.option1 {
+    grid-area: option1;
+}
+
+.option2 {
+    grid-area: option2;
+}
+
+.input1 {
+    grid-area: input1;
+}
+
+.input {
+    grid-area: input2;
+}
+
 .page-panjang {
-    z-index: 99;
+    z-index: 2;
+}
+
+input.input-panjang {
+    margin: 50px;
+    text-align: center;
+    width: 100%;
+    height: 143px;
+    border-radius: 10px;
+    top: 0;
+    border: 1px solid #c6c6c6;
+    font-size: 32px;
+    color: #001A24;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.select-panjang {
+    margin: 50px;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 94px;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    border: 5px solid #c6c6c6;
+    color: #c6c6c6;
+    font-size: 32px;
+    font-family: arial;
+}
+
+option {
+    color: #001A24;
 }
 
 /* Page Panjang End */
@@ -287,13 +353,18 @@ section.container-empat {
 @media screen and (min-width: 1200px) {
     .h1-page-satu {
         font-size: 64px;
-        margin:  220px 380px;
+        margin:  300px 220px;
     }
 }
 
 @media screen and (max-width: 768px) {
     header.container-satu {
         background-image: url(../assets/img/sunset-mobile.png);
+        height: 800px;
+    }
+
+    nav.navbar  {
+        z-index: 99;
     }
 
     .menu-toggle {
@@ -306,15 +377,32 @@ section.container-empat {
     img {
     height: 40px;
     width: 40px;
+    margin-left: 50px;
     }
     .h1-page-satu {
-        padding-top: 150px;
         font-size: 24px;
-        margin:  150px 30px;
+        margin:  200px 30px;
     }
 
     .h1-page-suhu {
         font-size: 24px;
+    }
+
+    .input-suhu {
+        height: 50px;
+    }
+
+    .input-suhu input {
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .label-suhu {
+        font-size: 24px;
+    }
+
+    span.logo-suhu {
+        font-size: 26px;
     }
     .h1-page-uang {
         font-size: 24px;
@@ -324,25 +412,46 @@ section.container-empat {
         font-size: 24px;
     }
 
-}
-
-@media (max-width: 500px) {
-    .menu-toggle {
-        width: 25%;
+    section.container-dua {
+        height: 700px;
     }
+
+    section.container-tiga {
+        height: 1000px;
+    }
+
+    section.container-empat {
+        height: 500px;
+    }
+
+    input.input-panjang {
+        margin: auto 20px;
+        text-align: center;
+        height: 100px;
+        font-size: 15px;
+        color: #001A24;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .select-panjang {
+        margin: 20px 20px;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+    }
+
 
     nav ul{
         position: absolute;
         right: 0;
-        top: 84px;
+        top: 80px;
         height: 40vh;
         width: 100%;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         background-color: #29233c;
-        z-index: -100;
-        transform: translateY(-100%);
+        transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
         margin-right: 0;
@@ -353,9 +462,17 @@ section.container-empat {
         font-size: 20px;
     }
 
-    nav ul.slide {
-        transform: translatey(0);
+    .slide {
+        transform: translateX(0);
         opacity: 1;
+        z-index: -99;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        width: 25%;
     }
 }
 
