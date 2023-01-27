@@ -361,6 +361,10 @@ option {
 }
 /* Page Panjang End */
 
+.disable-input {
+    background-color: #cacaca;
+}
+
 /* Responsive Tablet */
 
 
@@ -411,11 +415,14 @@ option {
 
     .input-suhu {
         height: 50px;
+
     }
 
     .input-suhu input {
-        height: 48px;
+        height: 41px;
         font-size: 20px;
+        display: flex;
+        align-items: center;
     }
 
     .label-suhu {
@@ -438,7 +445,7 @@ option {
     }
 
     section.container-tiga {
-        height: 500px;
+        height: 700px;
     }
 
     .page-third {
@@ -447,7 +454,7 @@ option {
     }
 
     section.container-empat {
-        height: 600px;
+        height: 800px;
     }
 
     input.input-panjang {
