@@ -151,6 +151,8 @@ section.container-dua {
     padding-top: 140px;
     background-color: #211C33;
     height: 1080px;
+    background: #211C33;
+box-shadow: 0px -95px 169px #211C33, 0px -47.5464px 84.5825px rgba(33, 28, 51, 0.760333), 0px -28.6397px 50.9486px rgba(33, 28, 51, 0.651589), 0px -18.3538px 32.6505px rgba(33, 28, 51, 0.570895), 0px -11.8955px 21.1614px rgba(33, 28, 51, 0.5), 0px -7.48807px 13.3209px rgba(33, 28, 51, 0.429105), 0px -4.30236px 7.65367px rgba(33, 28, 51, 0.348411), 0px -1.89358px 3.36858px rgba(33, 28, 51, 0.239667);
 }
 
 /* Suhu Start */
